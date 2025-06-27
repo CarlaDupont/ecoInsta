@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll & Wake Up – Impact numérique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    /* Navbars */
+    .topbar, .bottombar {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 430px;
+      background: #000;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-color: #333;
+    }
+    .topbar { top: 0; border-bottom: 1px solid #333; }
+    .bottombar { bottom: 0; border-top: 1px solid #333; justify-content: space-around; }
+    .logo { font-weight: 600; font-size: 1.1rem; }
+    .nav-icon { font-size: 1.35rem; }
+
+    /* Feed */
+    .app-wrapper {
+      width: 100%;
+      max-width: 430px;
+      margin: 56px auto 56px;
+      position: relative;
+    }
+    .post {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #333;
+      margin-bottom: 32px;
+      transition: filter 0.25s ease;
+    }
+    .post img { width: 100%; display: block; }
+    .actions { display:flex; align-items:center; justify-content:space-between; padding: 8px 10px 4px; font-size:1.35rem; }
+    .actions .left { display:flex; align-items:center; gap:12px; }
+  </style>
+</head>
+<body>
+  <!-- Navbars -->
+  <header class="topbar"><span class="nav-icon">📷</span><span class="logo">InstaEco</span><span class="nav-icon">✉️</span></header>
+  <footer class="bottombar"><span class="nav-icon">🏠</span><span class="nav-icon">🔍</span><span class="nav-icon">➕</span><span class="nav-icon">🎞️</span><span class="nav-icon">👤</span></footer>
+
+  <!-- Feed -->
+  <div class="app-wrapper" id="feed">
+    <div class="post"><img src="img/11111433-instagrammable-hotels-hong-kong_cover_1080x1350.webp" alt="post1"><div class="actions"><div class="left"><span>❤️ 128</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/alex-motoc-H5gNE2RX8Ac-unsplash.webp" alt="post2"><div class="actions"><div class="left"><span>❤️ 254</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/b6284746b1d6319d0bfad5c8b59b6d27.jpg" alt="prévention1"><div class="actions"><div class="left"><span>❤️ 87</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/cleanfooddirtycity.png" alt="post3"><div class="actions"><div class="left"><span>❤️ 112</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/20250627_0943_Prévention Pollution Numérique_simple_compose_01jyr5cceyfg0s3h89sm9wbd99.png" alt="post4"><div class="actions"><div class="left"><span>❤️ 342</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/images (1).jpg" alt="post5"><div class="actions"><div class="left"><span>❤️ 98</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/polution.jpg" alt="post7"><div class="actions"><div class="left"><span>❤️ 205</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/images (3).jpg" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/Instagrammable-Places-In-Abu-Dhabi-101-768x1024.jpg.webp" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/images (2).jpg" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/Instagrammable-places-in-chicago.jpg" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/assets_task_01jyr5nhrjf8p8epm7hx63gxsb_1751010607_img_0.webp" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/instagrammable-places-in-Quebec-City-2.jpg.webp" alt="post6"><div class="actions"><div class="left"><span>❤️ 176</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/loki-animals-to-follow-on-instagram-1568409406.jpg" alt="post7"><div class="actions"><div class="left"><span>❤️ 205</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/most-instagrammable-places-chefchaouen-morocco.jpg" alt="post7"><div class="actions"><div class="left"><span>❤️ 205</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/paris-instagrammable.jpg" alt="post7"><div class="actions"><div class="left"><span>❤️ 205</span><span>💬</span></div><div>✉️</div></div></div>
+    <div class="post"><img src="img/assets_task_01jyr613qqe7va3rpj0v9mnd5e_1751010887_img_0.webp" alt="post7"><div class="actions"><div class="left"><span>❤️ 205</span><span>💬</span></div><div>✉️</div></div></div>
+
+    <div class="post stop ">
+  <img src="img\assets_task_01jyrcha8xej39yhnxs3rq6ad0_1751017874_img_0.webp" alt="stop icon" />
+
+  <p class="intro">Tu ne l’as sans doute pas remarqué tout de suite… mais ton écran s’est assombri. <br>
+  Petit à petit. Silencieusement.</p>
+
+  <p class="subtle">Comme ta consommation numérique. Invisible. Permanente.<br>
+  Et pourtant, bien réelle.</p>
+
+  <p class="fact">Une heure de scroll, c’est environ <strong>50g de CO₂</strong>.<br>
+  C’est l’équivalent d’une ampoule allumée pendant 3h,<br>
+  ou d’un trajet de 500 mètres en voiture.</p>
+
+  <p class="fact">Regarder 10 vidéos sur ton feed ?<br>
+  C’est autant que faire chauffer 3 bouilloires.</p>
+
+  <p class="impact">La pollution numérique représente aujourd’hui <strong>plus de 4% des émissions mondiales</strong> de gaz à effet de serre.<br>
+  Et si rien ne change, ce sera <strong>7% d’ici 2040</strong>.</p>
+
+  <p class="awareness">Tu as continué à scroller. Tu t’es dit que ce n’était « pas si grave ».<br>
+  Tu t’en es rendu compte… <strong>trop tard</strong>.</p>
+
+  <p class="cta">👉 N’attends pas qu’il fasse complètement noir pour ouvrir les yeux.<br>
+  <strong>Déconnecte. Réfléchis. Agis.</strong></p>
+</div>
+    </div>
+
+
+  <script>
+    const posts = document.querySelectorAll('.post:not(.stop)');
+
+
+function updateBrightness() {
+  const scrollY = window.scrollY;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+  posts.forEach((post, index) => {
+    const total = posts.length;
+    const ratio = index / (total - 1); // 0 pour le premier, 1 pour le dernier
+    const brightness = 1 - (0.85 * ratio); // 1 → 0.15
+    post.style.filter = `brightness(${brightness.toFixed(3)})`;
+  });
+}
+
+window.addEventListener('scroll', updateBrightness);
+window.addEventListener('DOMContentLoaded', updateBrightness);
+
+  </script>
+</body>
+</html>
