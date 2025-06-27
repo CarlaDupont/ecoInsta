@@ -203,12 +203,9 @@ body::before {
 }
 
 .post.stop img {
-  width: 100vw;
-  max-width: 100vw;
-  height: auto;
+  width: 100%;
   display: block;
-  object-fit: cover;
-  filter: brightness(1) !important;
+
 }
 
 .logo-img {
